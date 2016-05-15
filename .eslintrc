@@ -1,0 +1,26 @@
+{
+  "extends": "airbnb",
+  "env": {
+    "mocha": true,
+    "jquery": true
+  },
+  "globals": {
+    "chai": true,
+    "expect": true,
+    "sinon": true,
+    "analytics": true,
+    "refRTCID": true,
+    "decodeQuerystring": true
+  },
+  "rules": {
+    "no-return-assign": 0,
+    "react/jsx-no-bind": 0,
+    "no-console": "error",
+    "comma-dangle": [2, "never"],
+    "brace-style": [2, "stroustrup", { "allowSingleLine": true }],
+    "new-cap": [2, { "capIsNewExceptions": [
+      "List", "Map", "DateField", "IntegerField", "ChoiceField", "CharField",
+      "DecimalField"
+    ]}]
+  }
+}
